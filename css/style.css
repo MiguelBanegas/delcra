@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #ffffff; /* Fondo blanco */
+    /* background: #ffffff;  Fondo blanco - Consider using Bootstrap's bg-white */
     color: #34495e; /* Azul oscuro para el texto principal */
     margin: 0;
     display: flex;
@@ -23,12 +24,14 @@ main {
     padding: 6rem 2rem;
     text-align: center;
 }
+
 .hero-section p {
     font-size: 1.2rem;
     color: #555; /* Gris oscuro para párrafos */
     margin-top: 1rem;
     text-align: center;
 }
+
 h1 {
     font-size: 3rem;
     margin-bottom: 0.5em;
@@ -48,13 +51,13 @@ main p {
 
 /* Header y Navegación */
 header {
-    background: #ffffff;
+    /* background: #ffffff; */ /* Consider using Bootstrap's bg-white */
     padding: 1rem 2rem;
     border-bottom: 1px solid #dee2e6; /* Borde gris claro */
 }
 
 nav {
-    display: flex;
+    /* display: flex; */ /* Removed */
     justify-content: space-between;
     align-items: center;
 }
@@ -73,7 +76,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */ /* Removed */
     gap: 1.5rem;
 }
 
@@ -93,6 +96,7 @@ nav a.active {
     color: #003d6b;
     font-weight: bold;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -104,7 +108,7 @@ footer {
     padding: 1.5rem 2rem; /* Ajustamos padding horizontal para consistencia */
     font-size: 0.9rem;
     color: #6c757d; /* Gris para texto secundario */
-    background: #f8f9fa; /* Fondo gris muy claro */
+    /* background: #f8f9fa; */ /* Fondo gris muy claro - consider Bootstrap's bg-light */
     border-top: 1px solid #dee2e6;
 }
 
@@ -170,9 +174,9 @@ footer p {
     text-align: center;
 }
 
-.content-section:nth-child(odd) {
-    background-color: #f8f9fa; /* Alterna con gris muy claro */
-}
+/* .content-section:nth-child(odd) { */
+/*     /* background-color: #f8f9fa; */ /* Alterna con gris muy claro - conside r Bootstrap's bg-light */
+/* } */
 
 .content-section h2 {
     font-size: 2.5rem;
@@ -220,6 +224,43 @@ footer p {
 }
 
 /* --- Estilos para la Galería de Proyectos --- */
+.custom-carousel-img {
+  max-width: 300px; /* Adjust as needed */
+  max-height: 200px; /* Adjust as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 8px;
+}
+
+.carousel-inner {
+  overflow: hidden;
+}
+
+.small-img {
+  opacity: 0.7;
+}
+
+.big-img {
+  max-width: 400px; /* Adjust as needed */
+  max-height: 300px; /* Adjust as needed */
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-item {
+  transition: opacity 1.5s ease-in; /* Adjust the duration as needed */
+  opacity: 0; /* Initially hide all items */
+}
+
+.carousel-item.active {
+  opacity: 1; /* Make the active item visible */
+  transition: opacity 1.5s ease-out; /* Fade out the active item */
+}
+
+.carousel-item img {
+    height: 300px; /* Adjust this value to your desired fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

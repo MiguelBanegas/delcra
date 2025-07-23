@@ -1,112 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bienvenido a Delcra, soluciones innovadoras para tu empresa.">
+    <meta
+      name="description"
+      content="Bienvenido a Delcra, soluciones innovadoras para tu empresa."
+    />
     <title>Delcra.com.ar - Inicio</title>
     <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="border-0">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <nav>
-                <a href="index.html" class="logo"><img src="assets/logo/logoDelcra.jpeg" alt="Logo de Delcra"></a>
-                <ul>
-                    <li><a href="#hero" class="active">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#clientes">Clientes</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/logo/logoDelcra.jpeg"
+              alt="Logo de Delcra"
+              height="80"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end text-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#clientes">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Sección Hero -->
-        <section id="hero" class="hero-section">
-            <div class="container">
-                <h1>Soluciones Eléctricas y de Mantenimiento</h1>
-                <p>Ofrecemos servicios integrales para industrias, comercios y hogares, garantizando seguridad y eficiencia energética.</p>
-            </div>
-        </section>
+      <!-- Sección Hero -->
+      <section
+        id="hero"
+        class="hero-section bg-light py-text-center py-5 container"
+      >
+        <div class="container bg-light py-5">
+          <h1>Soluciones Eléctricas y de Mantenimiento</h1>
+          <p class="lead">
+            Ofrecemos servicios integrales para industrias, comercios y hogares,
+            garantizando seguridad y eficiencia energética.
+          </p>
+          <a href="#servicios" class="btn btn-primary btn-lg">Ver Servicios</a>
+        </div>
+      </section>
 
-        <!-- Sección Servicios -->
-        <section id="servicios" class="content-section">
-            <div class="container">
-                <h2>Nuestros Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Instalaciones Eléctricas</h3>
-                        <p>Diseño e implementación de instalaciones eléctricas seguras y conformes a la normativa vigente.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-wrench"></i>
-                        <h3>Mantenimiento Preventivo</h3>
-                        <p>Planes de mantenimiento para evitar fallas, optimizar el rendimiento y prolongar la vida útil de sus equipos.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Automatización y Control</h3>
-                        <p>Modernización de sistemas para un control inteligente y eficiente de sus procesos e iluminación.</p>
-                    </div>
+      <!-- Sección Servicios -->
+      <section id="servicios" class="content-section py-5 container">
+        <div class="container">
+          <h2 class="text-center mb-4">Nuestros Servicios</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-bolt fa-3x mb-3 text-primary"></i>
+                  <h3 class="card-title">Instalaciones Eléctricas</h3>
+                  <p class="card-text">
+                    Diseño e implementación de instalaciones eléctricas seguras
+                    y conformes a la normativa vigente.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-wrench fa-3x mb-3 text-primary"></i>
+                  <h3 class="card-title">Mantenimiento Preventivo</h3>
+                  <p class="card-text">
+                    Planes de mantenimiento para evitar fallas, optimizar el
+                    rendimiento y prolongar la vida útil de sus equipos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-lightbulb fa-3x mb-3 text-primary"></i>
+                  <h3 class="card-title">Automatización y Control</h3>
+                  <p class="card-text">
+                    Modernización de sistemas para un control inteligente y
+                    eficiente de sus procesos e iluminación.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección Quiénes Somos -->
-        <section id="quienes-somos" class="content-section">
-            <div class="container">
-                <h2>Quiénes Somos</h2>
-                <p>Somos un equipo de profesionales con más de 15 años de experiencia, apasionados por ofrecer soluciones eléctricas y de mantenimiento de máxima calidad. Nuestra misión es garantizar la seguridad y eficiencia en cada proyecto, construyendo relaciones de confianza a largo plazo con nuestros clientes.</p>
-                <div class="social-icons">
-                    <!-- Reemplaza '#' con los enlaces a tus redes sociales -->
-                    <a href="#" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </section>
+      <!-- Sección Quiénes Somos -->
+      <section
+        id="quienes-somos"
+        class="content-section bg-light py-5 container"
+      >
+        <div class="container">
+          <h2 class="text-center mb-4">Quiénes Somos</h2>
+          <p class="text-center">
+            Somos un equipo de profesionales con más de 15 años de experiencia,
+            apasionados por ofrecer soluciones eléctricas y de mantenimiento de
+            máxima calidad. Nuestra misión es garantizar la seguridad y
+            eficiencia en cada proyecto, construyendo relaciones de confianza a
+            largo plazo con nuestros clientes.
+          </p>
+          <div class="social-icons text-center">
+            <!-- Reemplaza '#' con los enlaces a tus redes sociales -->
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Facebook"
+              ><i class="fab fa-facebook-f fa-2x"></i
+            ></a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              ><i class="fab fa-linkedin-in fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección Proyectos (Galería) -->
-        <section id="proyectos" class="content-section">
-            <div class="container">
-                <h2>Proyectos Realizados</h2>
-                <div class="gallery-grid">
-                    <!-- Aquí irían las imágenes de tus trabajos. Usa imágenes de aprox. 800x600px -->
-                    <img src="https://via.placeholder.com/800x600.png/1f1f1f/00b894?text=Tablero+Eléctrico" alt="Proyecto 1">
-                    <img src="https://via.placeholder.com/800x600.png/1f1f1f/00b894?text=Instalación+Comercial" alt="Proyecto 2">
-                    <img src="https://via.placeholder.com/800x600.png/1f1f1f/00b894?text=Mantenimiento+Planta" alt="Proyecto 3">
-                </div>
+      <!-- Sección Proyectos (Galería) -->
+      <section id="proyectos" class="content-section py-5 container">
+        <div class="container">
+          <h2 class="text-center mb-4">Proyectos Realizados</h2>
+          <div id="carouselDelcra" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/proyectos/1.png" class="d-block w-100" alt="Proyecto 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/proyectos/2.png" class="d-block w-100" alt="Proyecto 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/proyectos/3.png" class="d-block w-100" alt="Proyecto 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/proyectos/4.png" class="d-block w-100" alt="Proyecto 4">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/proyectos/5.png" class="d-block w-100" alt="Proyecto 5">
+              </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDelcra" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDelcra" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección Clientes -->
-        <section id="clientes" class="content-section">
-            <div class="container">
-                <h2>Confían en Nosotros</h2>
-                <div class="clients-grid">
-                    <!-- Reemplaza estos placeholders con los logos de tus clientes -->
-                    <img src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+A" alt="Logo Cliente A">
-                    <img src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+B" alt="Logo Cliente B">
-                    <img src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+C" alt="Logo Cliente C">
-                    <img src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+D" alt="Logo Cliente D">
-                </div>
+      <!-- Sección Clientes -->
+      <section id="clientes" class="content-section bg-light py-5 container">
+        <div class="container">
+          <h2 class="text-center mb-4">Confían en Nosotros</h2>
+          <div class="row justify-content-center">
+            <!-- Reemplaza estos placeholders con los logos de tus clientes -->
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+A"
+                alt="Logo Cliente A"
+                class="img-fluid"
+              />
             </div>
-        </section>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+B"
+                alt="Logo Cliente B"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+C"
+                alt="Logo Cliente C"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://via.placeholder.com/150x80.png/eeeeee/333333?text=Cliente+D"
+                alt="Logo Cliente D"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 Delcra.com.ar - Todos los derechos reservados</p>
-        </div>
+    <footer class="bg-dark text-light py-3">
+      <div class="container text-center">
+        <p>© 2025 Delcra.com.ar - Todos los derechos reservados</p>
+      </div>
     </footer>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js" defer></script>
-</body>
+  </body>
 </html>
