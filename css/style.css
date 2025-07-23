@@ -1,0 +1,279 @@
+/* Reseteo básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff; /* Fondo blanco */
+    color: #34495e; /* Azul oscuro para el texto principal */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    /* Ya no centramos todo, cada sección tendrá su propio estilo */
+}
+
+.hero-section {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    color: #555; /* Gris oscuro para párrafos */
+    margin-top: 1rem;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: #005a9c; /* Azul principal para títulos */
+    text-shadow: none;
+}
+
+main p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    line-height: 1.5;
+    color: #34495e; /* Azul oscuro para el texto */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header y Navegación */
+header {
+    background: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #dee2e6; /* Borde gris claro */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 80px; /* Puedes ajustar esta altura como prefieras */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #005a9c; /* Enlaces en azul */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #003d6b; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Estilo para el enlace de la página activa */
+nav a.active {
+    color: #003d6b;
+    font-weight: bold;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 2rem; /* Ajustamos padding horizontal para consistencia */
+    font-size: 0.9rem;
+    color: #6c757d; /* Gris para texto secundario */
+    background: #f8f9fa; /* Fondo gris muy claro */
+    border-top: 1px solid #dee2e6;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+/* --- Página de Contacto --- */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espacio entre íconos */
+    margin-top: 2rem;
+}
+
+.contact-icons a {
+    color: #005a9c;
+    text-decoration: none;
+    font-size: 2rem; /* Tamaño del ícono */
+    padding: 1rem;
+    border: 2px solid #dee2e6;
+    border-radius: 50%; /* Círculo perfecto */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    background-color: #005a9c;
+    color: #ffffff;
+}
+
+/* --- Estilos para el Mapa Embebido --- */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 60%; /* Ocupa el 100% del contenedor padre */
+    max-width: 800px; /* Pero con un ancho máximo para que no sea gigante */
+    padding-top: 56.25%; /* Proporción 16:9 (para 4:3 usa 75%) */
+    margin: 3rem auto 0; /* Centra el mapa horizontalmente */
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- Estilos para las nuevas secciones de contenido --- */
+.content-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.content-section:nth-child(odd) {
+    background-color: #f8f9fa; /* Alterna con gris muy claro */
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #005a9c;
+}
+
+/* --- Estilos para la sección de Servicios --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 90, 156, 0.1); /* Sombra azulada */
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #005a9c;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- Estilos para la Galería de Proyectos --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+/* --- Estilos para la sección de Clientes --- */
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.clients-grid img {
+    height: 60px; /* Ajusta la altura de los logos */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.clients-grid img:hover {
+    filter: grayscale(0%);
+}
+
+/* --- Estilos para Redes Sociales --- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 1.5rem; /* Tamaño de los íconos sociales */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #005a9c;
+    transform: scale(1.2);
+}
