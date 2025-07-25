@@ -53,7 +53,6 @@ main p {
 header {
     /* background: #ffffff; */ /* Consider using Bootstrap's bg-white */
     padding: 1rem 2rem;
-    border-bottom: 1px solid #dee2e6; /* Borde gris claro */
 }
 
 nav {
@@ -103,8 +102,9 @@ nav a.active {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem; /* Ajustamos margen horizontal para consistencia */
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    
 }
 
 /* Footer */

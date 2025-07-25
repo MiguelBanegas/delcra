@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contactate con Delcra.">
-    <title>Delcra.com.ar - Contacto</title>
+    <meta name="description" content="Contactate con DELCRA.">
+    <title>DELCRA.com.ar - Contacto</title>
     <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -12,6 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+      /* Estilo para el recuadro que bordea la página */
+      /* body::before { */
+      /*   content: ''; */
+      /*   position: fixed; */
+      /*   top: 1rem;    /* 16px */ */
+      /*   bottom: 1rem; /* 16px */ */
+      /*   left: 1.5rem;   /* 24px */ */
+      /*   right: 1.5rem;  /* 24px */ */
+      /*   border: 3px solid rgba(0, 0, 0, 0.075); /* Borde sutil y semi-transparente */ */
+      /*   pointer-events: none; /* Permite hacer click a través del borde */ */
+      /*   z-index: 9999; /* Asegura que esté por encima de todo */ */
+      /*   border-radius: .5rem; /* Bordes redondeados sutiles */ */
+      /* } */
+    </style>
 </head>
 <body>
   <header>
@@ -23,8 +38,8 @@
           height="200"
         />
         <div class="mt-2">
-          <h1 class="h5 m-0">DELCRA Servicios Eléctricos</h1>
-          <p class="small m-0">Tecnología Aplicada a la Energía ⚡</p>
+          <h1 class="h4 m-0">DELCRA Servicios Eléctricos</h1>
+          <p class="m-0">⚡ Tecnología Aplicada a la Energía ⚡</p>
         </div>
       </a>
     </div>
@@ -77,10 +92,41 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-light py-3">
-        <div class="container text-center">
-            <p>© 2025 Delcra.com.ar - Todos los derechos reservados</p>
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-primary">DELCRA</h5>
+            <p>Soluciones eléctricas integrales para la industria, el comercio y la hotelería. Garantizamos seguridad, eficiencia y tecnología de punta en cada proyecto.</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-primary">Enlaces</h5>
+            <p><a href="../index.html#servicios" class="text-white text-decoration-none">Servicios</a></p>
+            <p><a href="../index.html#proyectos" class="text-white text-decoration-none">Proyectos</a></p>
+            <p><a href="../index.html#clientes" class="text-white text-decoration-none">Clientes</a></p>
+            <p><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-primary">Contacto</h5>
+            <p><i class="fas fa-home me-3"></i> Mar del Plata, Argentina</p>
+            <p><i class="fas fa-envelope me-3"></i> info@delcra.com.ar</p>
+            <p><i class="fas fa-phone me-3"></i> +54 9 11 5949-0184</p>
+          </div>
         </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2025 DELCRA.com.ar - Todos los derechos reservados</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+              <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-light btn-floating m-1" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/delcra_/" target="_blank" class="btn btn-outline-light btn-floating m-1" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/delcra-servicios-electricos-7b421a28a/" target="_blank" class="btn btn-outline-light btn-floating m-1" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="../js/main.js" defer></script>
