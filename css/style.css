@@ -261,7 +261,7 @@ footer p {
 }
 
 .carousel-item img {
-    height: 300px; /* Adjust this value to your desired fixed height */
+    height: 900px; /* Adjust this value to your desired fixed height */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
 }
 
