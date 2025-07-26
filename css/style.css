@@ -228,6 +228,12 @@ footer p {
     line-height: 1.6;
 }
 
+/* Estilo para las imágenes en las tarjetas de servicio */
+#servicios .card-img-top {
+    height: 200px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
 /* --- Estilos para la Galería de Proyectos --- */
 .custom-carousel-img {
   max-width: 300px; /* Adjust as needed */
@@ -357,4 +363,21 @@ footer p {
 #carouselGaleriaAlternativa .carousel-inner img {
     height: 550px; /* Altura fija para la imagen principal */
     object-fit: contain; /* 'contain' para asegurar que la imagen se vea completa y centrada */
+}
+
+/* --- Media Queries para Responsividad --- */
+@media (max-width: 767px) {
+    /* Ajustes para la galería en móviles */
+    #carouselGaleriaAlternativa .carousel-inner img {
+        height: 300px; /* Reducir la altura de la imagen principal en móviles */
+    }
+
+    #carouselGaleriaAlternativa .carousel-indicators {
+        flex-wrap: wrap; /* Permitir que los thumbnails se envuelvan */
+    }
+
+    #carouselGaleriaAlternativa .carousel-indicators button {
+        width: 80px; /* Reducir el tamaño de los thumbnails */
+        height: 60px;
+    }
 }
