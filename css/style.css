@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background: #ffffff;  Fondo blanco - Consider using Bootstrap's bg-white */
+    /* background-color y background-image serán manejados por JavaScript */
     color: #34495e; /* Azul oscuro para el texto principal */
     margin: 0;
     display: flex;
